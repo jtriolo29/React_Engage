@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact List</title>
+    <!-- Tailwind CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root">React has not rendered!!</div>
+  <!-- React CDNs -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <!-- Babel CDN -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    const contact = (
+      <figure className="w-56 flex flex-col items-center bg-gray-50 rounded-xl p-8 space-y-2 shadow-xl">
+        <div>
+          <img className="w-28 h-28 rounded-full" src="../baseline_perm_identity_black_48dp.png" />
+        </div>
+        <h1 className="text-lg font-semibold">Leroy Brown</h1>
+        <p className="font-light text-gray-500">(123)-456-7890</p>
+        <p className="font-light text-gray-500">LB35@yahoo.com</p>
+      </figure>       
+    );
+
+    ReactDOM.render(contact, document.getElementById("root"));
+
+  </script>
+  </body>
+</html>
