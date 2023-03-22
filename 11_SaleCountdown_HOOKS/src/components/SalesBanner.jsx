@@ -10,7 +10,7 @@ import {
 } from "date-fns";
 
 function SaleBanner() {
-  const endDate = add(new Date("January 10, 2023 00:00:00"), {
+  const endDate = add(new Date("March 6, 2023 00:00:00"), {
     days: 4,
     hours: 0,
     minutes: 0,
