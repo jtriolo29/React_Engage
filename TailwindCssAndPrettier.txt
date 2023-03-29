@@ -1,4 +1,4 @@
-*Run - this puts entries in package.js 
+*Run - this puts entries in package.jsonn 
 npm install --save-dev tailwindcss@latest autoprefixer@latest
 
 *Run - this creates the tailwind.config.js
@@ -48,8 +48,8 @@ module.exports = {
 
 prettier
 **********************
-*Create file
-.prettierrc.json
+*Create file .prettierrc.json
+
 {}
 
 **********************
@@ -62,4 +62,24 @@ prettier
     "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.{js,jsx}\""
   },
+
+**********************
+Create components folder
+
+**********************
+Modify index.js
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./components/App.css";
+import App from "./components/App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+**********************
 
