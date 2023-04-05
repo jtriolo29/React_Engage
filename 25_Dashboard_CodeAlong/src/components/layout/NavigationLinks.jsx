@@ -26,7 +26,7 @@ function NavigationLinks() {
       </NavLink>
       <NavLink
         to="/sales"
-        activeClassName="text-fuchsia-800"
+        className="text-fuchsia-800"
         aria-label="navigates to sales dashboard"
       >
         <ChartBarIcon

@@ -35,6 +35,14 @@ export default function BarGraph({
             >
               <circle cx="50" cy="50" r="50" />
             </svg>
+            <p className="capitalize text-fuchsia-800 text-xs">last year</p>
+            <svg
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-2 h-2 fill-current text-blue-900"
+            >
+              <circle cx="50" cy="50" r="50" />
+            </svg>
             <p className="capitalize text-blue-900 text-xs">this year</p>
           </div>
         </div>

@@ -12,8 +12,9 @@ export default function table({
   return (
     <section
       className={`w-full ${gridLayout} shadow-2xl rounded-lg overflow-y-auto h-full`}
-    >
-      {console.log(tableData)}
+    >      
+      {console.log("Table Headers:  " + tableHeaders)} 
+      {console.log("Grid Layout:  " + gridLayout)}
       <table className=" w-full m-auto relative">
         <thead className="bg-gray-50 w-full sticky top-0">
           <tr>
@@ -30,9 +31,12 @@ export default function table({
           </tr>
         </thead>
         <tbody className="bg-white divide-y divide-gray-200 break-words overflow-y-hidden">
+          {console.log("Table data:  " + tableData)}
           {tableData.map(function (data, index) {
             var reviewValues = [];
+            console.log("Review Values" + reviewValues);
             Object.entries(data).forEach(function ([key, value]) {
+              console.log("Key:  " + key);
               if (key === "data") {
                 let date = new Date(value);
                 reviewValues.push(date.toLocaleDateString());
@@ -53,7 +57,7 @@ export default function table({
                       className="px-6 py-4 break-words text-center overflow-hidden text-sm text-gray-500"
                     >
                       {prop}
-                      {console.log(prop)}
+                      {console.log("Prop: " + prop)}
                     </td>
                   );
                 })}
@@ -64,6 +68,7 @@ export default function table({
                       parentStateSelect={dropDownState}
                       setParentStateSelect={setDropDownState}
                     />
+                    {console.log("Drop Down Options:  " + dropDownOptions)}
                   </td>
                 ) : null}
               </tr>
